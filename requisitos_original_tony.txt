@@ -1,0 +1,27 @@
+NADA DE OCCIDENT
+
+Lo único seria el color rojo.
+
+Rojo y Azul
+
+El mejor precio en bienestar salud.
+Mejor precio en el mercado.
+
+Productos
+	- Enfocado en la póliza de (bienestar salud) va incluido decesos
+	- Decesos se puede vender solo
+
+
+Datos de usuarios
+	- Teléfono
+	- Correo
+	- Nombre y apellido
+	- Preguntas:
+		
+
+Funcionalidades
+	
+	- Cuando rellenen el formulario whatsapp
+	- Codigo QR
+	- Que te llegue un whatsapp cuando rellenen formulario
+

@@ -1,0 +1,40 @@
+1. Identidad Visual y Diseño
+Colores principales: Exclusivamente Rojo y Azul.
+
+Restricción de marca (¡Importante!): Prohibida cualquier mención, logo o referencia a la marca "Occident".
+
+2. Mensajes Clave (Copywriting y Ventas)
+Estos textos deben ir en el encabezado del formulario o en la página web para enganchar al usuario:
+
+Titular principal: "El mejor precio en bienestar salud."
+
+Titular de apoyo / Gancho: "El mejor precio en el mercado."
+
+3. Estructura del Formulario (Campos a rellenar)
+El formulario debe ser claro y recoger los siguientes datos:
+
+Nombre y apellido (Campo de texto simple).
+
+Teléfono (Campo numérico. Ojo: importante forzar el prefijo internacional para que funcione WhatsApp).
+
+Correo (Campo de email).
+
+Interés / Producto a contratar (Campo desplegable o casillas de selección múltiple):
+
+Opción A: Póliza de Bienestar Salud (Aclarando que ya incluye Decesos).
+
+Opción B: Solo Póliza de Decesos.
+
+Preguntas (Un campo de texto amplio / Textarea para que el usuario deje sus dudas concretas).
+
+4. Funcionalidades y Automatizaciones (Backend)
+Las acciones técnicas que deben ocurrir una vez el formulario existe o se envía:
+
+WhatsApp al Cliente (Confirmación): Justo como vimos antes, al rellenar el formulario, el cliente recibe un mensaje automático de WhatsApp de tu parte.
+
+WhatsApp al Vendedor (Alerta de Lead): Cuando el usuario le da a "Enviar", te debe llegar a ti (o a tu equipo comercial) un WhatsApp interno avisando: "Nuevo cliente interesado: Nombre, Teléfono, Producto".
+
+Código QR (Accesibilidad): Creación de un código QR impreso o digital que, al escanearse, lleve directamente a este formulario (ideal para tarjetas de visita, carteles o flyers).
+
+Consejo para tu desarrollo en Django:
+Para el punto 4 (el aviso a ti mismo por WhatsApp), puedes usar exactamente la misma función send_whatsapp_template que te mostré en el paso anterior, pero cambiando el número de destino (poniendo el tuyo en lugar del clean_phone del cliente) y usando una plantilla de Meta diseñada para alertas internas.
