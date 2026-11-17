@@ -13,7 +13,11 @@ interface FormData {
   aceptaPrivacidad: boolean;
 }
 
-export default function HomePageComponentClient() {
+interface Props {
+    slug:string;
+}
+
+export default function HomePageComponentClient({slug}:Props) {
   const [formData, setFormData] = useState<FormData>({
     nombre: "",
     apellidos: "",
@@ -63,10 +67,11 @@ export default function HomePageComponentClient() {
       correo: formData.correo.trim(),
       producto_interes: formData.producto_interes,
       preguntas: formData.preguntas.trim(),
+      slug:slug
     };
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/v1/contacto/enviar/", {
+      const response = await fetch("http://192.168.0.18:8000/api/contacto/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

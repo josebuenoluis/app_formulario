@@ -1,6 +1,9 @@
 from django.db import models
 from django.core.validators import RegexValidator
+from users.models import Users
 # Create your models here.
+
+
 
 class ClienteLead(models.Model):
     OPCIONES_POLIZA = [
@@ -26,6 +29,11 @@ class ClienteLead(models.Model):
     )
     preguntas = models.TextField(blank=True, null=True, verbose_name="Preguntas o dudas")
     fecha_registro = models.DateTimeField(auto_now_add=True)
-
+    vendedor = models.ForeignKey(
+        Users,
+        on_delete=models.SET_NULL,
+        verbose_name="cliente_lead_users",
+        null=True
+    )
     def __str__(self):
         return f"{self.nombre} - {self.telefono}"

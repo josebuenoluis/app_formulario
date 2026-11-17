@@ -31,7 +31,6 @@ class RegistroWhatsApp(models.Model):
         choices=ESTADOS_MENSAJE, 
         default='PENDIENTE'
     )
-    
     fecha_creacion = models.DateTimeField(auto_now_add=True)
     fecha_actualizacion = models.DateTimeField(auto_now=True)
     
