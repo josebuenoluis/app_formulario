@@ -91,7 +91,7 @@ def notificar_lead_al_vendedor(
 
     message = client.messages.create(
         from_=f"whatsapp:{telefono_remitente}",
-        to=f"whatsapp:+34{telefono_vendedor}", #644275671
+        to=f"whatsapp:{telefono_vendedor}", #644275671
         content_sid=template_sid,
         content_variables=variables_plantilla,
     )
