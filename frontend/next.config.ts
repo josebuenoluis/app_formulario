@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   cacheComponents: true,
   partialPrefetching: true,
   reactCompiler: true,
-  allowedDevOrigins: ["192.168.0.18"],
+  allowedDevOrigins: ["192.168.0.18","49gdjr2h-3000.euw.devtunnels.ms"],
   turbopack: {
     rules: {
       "*.css": {

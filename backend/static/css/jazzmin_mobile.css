@@ -1,0 +1,438 @@
+/* backend/static/css/jazzmin_mobile.css */
+@media (max-width: 767.98px) {
+    /* 1. Contenedores principales sin desbordamiento */
+    html,
+    body,
+    .app-wrapper,
+    .app-main,
+    .app-content {
+        overflow-x: hidden !important;
+        max-width: 100vw !important;
+    }
+
+    .app-content > .container-fluid,
+    #content-main {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    /* 2. Elimina la doble tarjeta y el exceso de padding (.p-5) dentro de las pestañas */
+    .col-12.col-lg-9 > .card {
+        border-radius: 14px !important;
+        border: 1px solid #e2e8f0 !important;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04) !important;
+    }
+
+    .col-12.col-lg-9 > .card > .card-body {
+        padding: 14px 12px !important;
+    }
+
+    .tab-pane > .card {
+        border: none !important;
+        box-shadow: none !important;
+        background: transparent !important;
+        margin: 0 !important;
+    }
+
+    .tab-pane > .card > .card-body.p-5,
+    .tab-pane > .card > .card-body {
+        padding: 6px 4px !important;
+    }
+
+    /* 3. Pantalla de Login e input-groups (iconos alineados con el input) */
+    .login-box,
+    .register-box {
+        width: 92% !important;
+        max-width: 400px !important;
+        margin: 24px auto !important;
+    }
+
+    .login-card-body,
+    .register-card-body {
+        padding: 24px 20px !important;
+        border-radius: 14px !important;
+    }
+
+    .input-group {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        align-items: stretch !important;
+        width: 100% !important;
+    }
+
+    .input-group > .form-control,
+    .input-group > input {
+        flex: 1 1 auto !important;
+        width: 1% !important;
+        min-width: 0 !important;
+    }
+
+    .input-group-append,
+    .input-group-prepend,
+    .input-group-text {
+        display: flex !important;
+        align-items: center !important;
+        width: auto !important;
+        flex: 0 0 auto !important;
+    }
+
+    /* 4. Pestañas de navegación (#jazzy-tabs) estilo píldora limpia */
+    #jazzy-tabs {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap: 6px !important;
+        border-bottom: 1px solid #e2e8f0 !important;
+        padding-bottom: 10px !important;
+        margin-bottom: 14px !important;
+    }
+
+    #jazzy-tabs .nav-item {
+        margin: 0 !important;
+    }
+
+    #jazzy-tabs .nav-link {
+        padding: 7px 12px !important;
+        font-size: 13px !important;
+        font-weight: 500 !important;
+        border-radius: 8px !important;
+        border: 1px solid #e2e8f0 !important;
+        background: #f8fafc !important;
+        color: #334155 !important;
+    }
+
+    #jazzy-tabs .nav-link.active {
+        background: #0d6efd !important;
+        border-color: #0d6efd !important;
+        color: #ffffff !important;
+    }
+
+    /* 5. Filas de formulario, etiquetas e inputs con aire interior cómodo */
+    .form-group {
+        margin-bottom: 18px !important;
+    }
+
+    .form-group > .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .form-group > .row > label.col-sm-3 {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin-bottom: 6px !important;
+        font-weight: 600 !important;
+        font-size: 14px !important;
+        color: #1e293b !important;
+    }
+
+    .form-group > .row > .col-sm-9 {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="password"],
+    .form-group input[type="number"],
+    .form-group input[type="url"],
+    .form-group input[type="tel"],
+    .form-group select,
+    .vTextField,
+    .vURLField,
+    .select2-container {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        padding: 10px 14px !important;
+        font-size: 15px !important;
+        border-radius: 8px !important;
+        border: 1px solid #cbd5e1 !important;
+        height: auto !important;
+    }
+
+    .form-group textarea,
+    .vLargeTextField {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        padding: 12px 14px !important;
+        font-size: 15px !important;
+        border-radius: 8px !important;
+        border: 1px solid #cbd5e1 !important;
+        min-height: 110px !important;
+    }
+
+    /* 6. Pestaña QR y Enlace Directo (.field-enlace_formulario y .field-vista_previa_qr) */
+    .field-enlace_formulario .readonly a {
+        display: block !important;
+        width: 100% !important;
+        padding: 12px 14px !important;
+        background: #f1f5f9 !important;
+        border: 1px solid #e2e8f0 !important;
+        border-radius: 10px !important;
+        word-break: break-all !important;
+        font-size: 13px !important;
+        line-height: 1.45 !important;
+        box-sizing: border-box !important;
+    }
+
+    .field-vista_previa_qr .readonly > div {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 18px 14px !important;
+        box-sizing: border-box !important;
+    }
+
+    .field-vista_previa_qr .readonly img {
+        width: 210px !important;
+        max-width: 100% !important;
+        height: auto !important;
+        margin: 0 auto !important;
+    }
+
+    /* Apila en columna los botones Descargar PNG y Eliminar y generar nuevo */
+    .field-vista_previa_qr .readonly > div > div {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        gap: 10px !important;
+        margin-top: 16px !important;
+    }
+
+    .field-vista_previa_qr .readonly > div > div > a {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100% !important;
+        padding: 11px 14px !important;
+        font-size: 14px !important;
+        white-space: nowrap !important;
+        word-break: normal !important;
+        border-radius: 8px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* 7. Bloque Password (hash largo) */
+    #id_password p {
+        word-break: break-all !important;
+        font-size: 13px !important;
+        line-height: 1.5 !important;
+    }
+
+    /* 8. Widget filter_horizontal (Groups y User permissions) */
+    .related-widget-wrapper {
+        width: 100% !important;
+    }
+
+    .selector {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        float: none !important;
+    }
+
+    .selector-available,
+    .selector-chosen {
+        width: 100% !important;
+        max-width: 100% !important;
+        float: none !important;
+        background: #f8fafc !important;
+        border: 1px solid #e2e8f0 !important;
+        border-radius: 10px !important;
+        padding: 12px !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    .selector-available-title label,
+    .selector-chosen-title label {
+        display: block !important;
+        text-align: center !important;
+        font-weight: 700 !important;
+        font-size: 14px !important;
+        margin-bottom: 4px !important;
+    }
+
+    .selector .helptext {
+        text-align: center !important;
+        font-size: 12px !important;
+        color: #64748b !important;
+        margin-bottom: 8px !important;
+    }
+
+    .selector-filter {
+        margin-bottom: 8px !important;
+    }
+
+    .selector-filter input {
+        width: 100% !important;
+        box-sizing: border-box !important;
+        padding: 8px 12px !important;
+        border-radius: 8px !important;
+        border: 1px solid #cbd5e1 !important;
+    }
+
+    .selector select.filtered {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 170px !important;
+        padding: 6px !important;
+        font-size: 12.5px !important;
+        border-radius: 8px !important;
+        border: 1px solid #cbd5e1 !important;
+        background: #ffffff !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Botones Choose all / Remove all (en Django moderno son <button>) */
+    button.selector-chooseall,
+    button.selector-clearall {
+        display: block !important;
+        width: 100% !important;
+        margin: 8px 0 0 0 !important;
+        padding: 8px 12px !important;
+        font-size: 12.5px !important;
+        font-weight: 600 !important;
+        text-align: center !important;
+        border-radius: 8px !important;
+        border: 1px solid #cbd5e1 !important;
+        background: #ffffff !important;
+        color: #334155 !important;
+    }
+
+    /* Botones centrales Choose selected / Remove selected */
+    ul.selector-chooser {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 8px !important;
+        width: 100% !important;
+        margin: 10px 0 !important;
+        padding: 0 !important;
+        list-style: none !important;
+        float: none !important;
+    }
+
+    ul.selector-chooser li {
+        transform: none !important;
+        margin: 0 !important;
+    }
+
+    button.selector-add,
+    button.selector-remove {
+        padding: 8px 14px !important;
+        font-size: 13px !important;
+        font-weight: 600 !important;
+        border-radius: 8px !important;
+        border: 1px solid #cbd5e1 !important;
+        background: #ffffff !important;
+        color: #1e293b !important;
+        white-space: nowrap !important;
+    }
+
+    .list-footer-display {
+        text-align: center !important;
+        font-size: 12px !important;
+        margin-top: 6px !important;
+    }
+
+    /* 9. Botones inferiores de guardado (#jazzy-actions) */
+    #jazzy-actions {
+        margin-top: 14px !important;
+    }
+
+    #jazzy-actions .d-flex {
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+
+    #jazzy-actions input[type="submit"],
+    #jazzy-actions a.btn {
+        width: 100% !important;
+        padding: 11px 14px !important;
+        font-size: 14px !important;
+        font-weight: 600 !important;
+        border-radius: 8px !important;
+    }
+
+    /* 10. Tablas de registros (changelist) */
+    .table-responsive,
+    #result_list {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+
+/* Corrige la doble caja de Select2 en filtros y acciones de las listas en móvil */
+@media (max-width: 767.98px) {
+    /* Quita borde y padding al envoltorio exterior de Select2 */
+    .select2-container,
+    .form-group .select2-container {
+        padding: 0 !important;
+        border: none !important;
+        background: transparent !important;
+        box-shadow: none !important;
+    }
+
+    /* Aplica el estilo limpio y el padding solo a la caja visible de Select2 */
+    .select2-container--default .select2-selection--single,
+    .select2-container .select2-selection--single {
+        height: 40px !important;
+        padding: 6px 28px 6px 12px !important;
+        border: 1px solid #cbd5e1 !important;
+        border-radius: 8px !important;
+        background-color: #ffffff !important;
+        display: flex !important;
+        align-items: center !important;
+        box-sizing: border-box !important;
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        padding-left: 0 !important;
+        line-height: 1.4 !important;
+        color: #1e293b !important;
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__arrow {
+        height: 38px !important;
+        right: 8px !important;
+    }
+
+    /* Ajusta el ancho de los filtros superiores (staff status, active, etc.) */
+    #changelist-filter .select2-container,
+    .changelist-form-container .select2-container {
+        min-width: 140px !important;
+        max-width: 100% !important;
+    }
+
+    /* Alinea bien el selector de acciones ("---------" + botón Go) */
+    .actions {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        align-items: center !important;
+        gap: 8px !important;
+    }
+
+    .actions .select2-container {
+        width: 160px !important;
+        min-width: 140px !important;
+    }
+
+    .actions label {
+        margin: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+}

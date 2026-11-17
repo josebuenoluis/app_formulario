@@ -71,7 +71,7 @@ export default function HomePageComponentClient({slug}:Props) {
     };
 
     try {
-      const response = await fetch("http://192.168.0.18:8000/api/contacto/", {
+      const response = await fetch("https://49gdjr2h-8000.euw.devtunnels.ms/api/contacto/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

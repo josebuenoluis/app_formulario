@@ -131,6 +131,16 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+
+JAZZMIN_SETTINGS = {
+    # ... tu configuración actual ...
+    "custom_css": "css/jazzmin_mobile.css",
+}
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
@@ -138,11 +148,12 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 AUTH_USER_MODEL = 'users.Users'
 
-FRONTEND_BASE_URL = "http://192.168.0.18:3000"
+FRONTEND_BASE_URL = "https://49gdjr2h-3000.euw.devtunnels.ms"
 
 ALLOWED_HOSTS = ['*']
 
 CSRF_TRUSTED_ORIGINS = [
     "http://192.168.0.18:3000",
     "http://192.168.0.18:8000",
+    'https://49gdjr2h-8000.euw.devtunnels.ms'
 ]
