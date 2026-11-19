@@ -32,6 +32,9 @@ export default function HomePageComponentClient({slug}:Props) {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState<string>("");
 
+
+
+  
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
   ) => {

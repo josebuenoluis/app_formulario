@@ -1,4 +1,78 @@
 /* backend/static/css/jazzmin_mobile.css */
+
+/* =========================================================
+   TARJETA DEL CÓDIGO QR Y ENLACE DIRECTO (ESCRITORIO Y MÓVIL)
+   ========================================================= */
+
+/* 1. Quita el recuadro gris ancho de Jazzmin en el contenedor del QR */
+.field-vista_previa_qr .readonly {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    width: auto !important;
+    max-width: 100% !important;
+    display: inline-block !important;
+}
+
+/* 2. Estiliza la tarjeta blanca ajustada al QR */
+.field-vista_previa_qr .readonly > div {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 16px !important;
+    padding: 20px !important;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06) !important;
+    display: inline-flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* 3. Marco sutil alrededor de la imagen QR */
+.field-vista_previa_qr .readonly img {
+    border-radius: 10px !important;
+    border: 1px solid #f1f5f9 !important;
+    padding: 6px !important;
+    background: #ffffff !important;
+}
+
+/* 4. Contenedor de los botones debajo del QR */
+.field-vista_previa_qr .readonly > div > div {
+    margin-top: 16px !important;
+    display: flex !important;
+    gap: 10px !important;
+    width: 100% !important;
+}
+
+/* 5. Botones más pulidos y equilibrados */
+.field-vista_previa_qr .readonly > div > div > a {
+    flex: 1 1 auto !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 9px 14px !important;
+    border-radius: 8px !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+    transition: opacity 0.15s ease !important;
+}
+
+.field-vista_previa_qr .readonly > div > div > a:hover {
+    opacity: 0.9 !important;
+}
+
+/* 6. Hace que la caja del "Enlace Directo" también se adapte al texto en escritorio */
+.field-enlace_formulario .readonly {
+    display: inline-block !important;
+    width: auto !important;
+    max-width: 100% !important;
+    background: #f8fafc !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 8px !important;
+    padding: 8px 14px !important;
+}
+
 @media (max-width: 767.98px) {
     /* 1. Contenedores principales sin desbordamiento */
     html,

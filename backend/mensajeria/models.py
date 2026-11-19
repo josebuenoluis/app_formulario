@@ -39,3 +39,7 @@ class RegistroWhatsApp(models.Model):
 
     def __str__(self):
         return f"Mensaje a {self.cliente.telefono} - {self.estado} - {self.fecha_creacion}"
+
+    class Meta:
+        verbose_name = "Registro de WhatsApp"
+        verbose_name_plural = "Registros de WhatsApp"

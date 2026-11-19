@@ -48,6 +48,8 @@ INSTALLED_APPS = [
     'contacto',
     'mensajeria',
     'users',
+    'django_celery_results',
+    'django_celery_beat'
 ]
 
 MIDDLEWARE = [
@@ -157,3 +159,8 @@ CSRF_TRUSTED_ORIGINS = [
     "http://192.168.0.18:8000",
     'https://49gdjr2h-8000.euw.devtunnels.ms'
 ]
+
+CELERY_BROKER_URL = 'redis://localhost:6379/0'
+CELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True
+CELERY_RESULT_BACKEND = 'django-db'
+CELERY_RESULT_EXTENDED = True

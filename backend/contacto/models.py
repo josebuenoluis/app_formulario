@@ -37,3 +37,7 @@ class ClienteLead(models.Model):
     )
     def __str__(self):
         return f"{self.nombre} - {self.telefono}"
+
+    class Meta:
+        verbose_name = "Captación de cliente"
+        verbose_name_plural = "Captaciones de clientes"
